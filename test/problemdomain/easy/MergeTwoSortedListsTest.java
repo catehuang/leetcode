@@ -11,8 +11,8 @@ class MergeTwoSortedListsTest {
     private MergeTwoSortedLists mergeTwoSortedLists;
     private int[] traverseNode(ListNode listNode) {
         ListNode current = listNode;
-        int[] results = new int[10];
-        int n = 0;
+        int[] results = new int[100];
+        int n = 0; //index
 
         if (current == null)
         {
@@ -29,7 +29,9 @@ class MergeTwoSortedListsTest {
 
         for (int x : results)
         {
-            System.out.print(x + " ");
+            if (x != 0) {
+                System.out.print(x + " ");
+            }
         }
         System.out.println();
         return results;
@@ -80,7 +82,7 @@ class MergeTwoSortedListsTest {
         output = mergeTwoSortedLists.mergeTwoLists(listNode1, listNode2);
         //traverseNode(output);
 
-        while (output.next != null)
+        while (listNodeExpected != null)
         {
             assertEquals(listNodeExpected.val, output.val);
             output = output.next;
@@ -115,7 +117,7 @@ class MergeTwoSortedListsTest {
         output = mergeTwoSortedLists.mergeTwoLists(listNode1, listNode2);
         //traverseNode(output);
 
-        while (output.next != null)
+        while (output != null)
         {
             assertEquals(listNodeExpected.val, output.val);
             output = output.next;
@@ -142,7 +144,80 @@ class MergeTwoSortedListsTest {
         output = mergeTwoSortedLists.mergeTwoLists(listNode1, listNode2);
         //traverseNode(output);
 
-        while (output.next != null)
+        while (output != null)
+        {
+            assertEquals(listNodeExpected.val, output.val);
+            output = output.next;
+            listNodeExpected = listNodeExpected.next;
+        }
+    }
+
+    @Test
+    void testcase5() {
+        ListNode listNode1 = new ListNode(2);
+        ListNode listNode2 = new ListNode(1);
+        int[] listExpected = {1, 2};
+        ListNode output;
+
+        ListNode listNodeExpected = createListNode(listExpected);
+        //traverseNode(listNodeExpected);
+
+        output = mergeTwoSortedLists.mergeTwoLists(listNode1, listNode2);
+        //traverseNode(output);
+
+        while (output != null) {
+            assertEquals(listNodeExpected.val, output.val);
+            output = output.next;
+            listNodeExpected = listNodeExpected.next;
+        }
+    }
+        @Test
+        void testcase6() {
+            int[] list1 = {5};
+            int[] list2 = {1, 2 ,4};
+            int[] listExpected = {1, 2, 4, 5};
+            ListNode output;
+
+            ListNode listNode1 = createListNode(list1);
+            //traverseNode(listNode1);
+
+            ListNode listNode2 = createListNode(list2);
+            //traverseNode(listNode2);
+
+            ListNode listNodeExpected = createListNode(listExpected);
+            //traverseNode(listNodeExpected);
+
+            output = mergeTwoSortedLists.mergeTwoLists(listNode1, listNode2);
+            //traverseNode(output);
+
+            while (listNodeExpected != null)
+            {
+                assertEquals(listNodeExpected.val, output.val);
+                output = output.next;
+                listNodeExpected = listNodeExpected.next;
+            }
+        }
+
+    @Test
+    void testcase7() {
+        int[] list1 = {-10, -10, -9, -4, 1, 6, 6};
+        int[] list2 = {-7};
+        int[] listExpected = {-10, -10, -9, -7, -4, 1, 6, 6};
+        ListNode output;
+
+        ListNode listNode1 = createListNode(list1);
+        //traverseNode(listNode1);
+
+        ListNode listNode2 = createListNode(list2);
+        //traverseNode(listNode2);
+
+        ListNode listNodeExpected = createListNode(listExpected);
+        traverseNode(listNodeExpected);
+
+        output = mergeTwoSortedLists.mergeTwoLists(listNode1, listNode2);
+        traverseNode(output);
+
+        while (listNodeExpected != null)
         {
             assertEquals(listNodeExpected.val, output.val);
             output = output.next;
