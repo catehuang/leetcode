@@ -1,7 +1,4 @@
-import easy.ListNode;
-import easy.MergeTwoSortedLists;
-import easy.PlusOne;
-import easy.RemoveElement;
+import easy.*;
 
 import java.util.Arrays;
 
