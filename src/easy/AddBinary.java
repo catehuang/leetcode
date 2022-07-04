@@ -12,9 +12,75 @@ import java.util.Arrays;
  */
 public class AddBinary {
     public String addBinary(String a, String b) {
-        String str = method1(a, b);
+
+        char[] str = new char[Math.max(a.length(), b.length()) + 1];
+        String result = "";
+        boolean isCarry = false;
+        int sum = 0;
+
+        for (int i = 0; i < str.length; i++) {
+            if (isCarry) {
+                sum = 1;
+            } else {
+                sum = 0;
+            }
+
+            if (i < a.length()) {
+                sum += a.charAt(a.length() - i - 1) - 48;
+            }
+
+            if (i < b.length()) {
+                sum += b.charAt(b.length() - i - 1) - 48;
+            }
+
+            switch (sum) {
+                case 0:
+                    str[i] = '0';
+                    isCarry = false;
+                    break;
+                case 1:
+                    str[i] = '1';
+                    isCarry = false;
+                    break;
+                case 2:
+                    str[i] = '0';
+                    isCarry = true;
+                    break;
+                case 3:
+                    str[i] = '1';
+                    isCarry = true;
+                    break;
+                default:
+                    System.out.println("Error1: something wrong.");
+                    break;
+            }
+        }
+
+        boolean effective = false;
+
+        for (int k = str.length - 1; k > -1; k--)
+        {
+            if (str[k] == '1' && effective == false)
+            {
+                effective = true;
+            }
+
+            if (effective)
+            {
+                result += str[k];
+            }
+        }
+
+        if (result == "")
+        {
+            result = "0";
+        }
+
+        return result;
 
 
+        // String str = method1(a, b);
+        // return str;
     }
 
     private String method1(String a, String b)
