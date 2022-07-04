@@ -43,4 +43,14 @@ class AddBinaryTest {
         String expected = "1100";
         assertEquals(expected, this.addBinary.addBinary(a, b));
     }
+
+    @Test
+    void testcase5() {
+        String a = "1";
+        String b = "11011100011";
+        String expected = "11011100100";
+        assertEquals(expected, this.addBinary.addBinary(a, b));
+    }
+
+
 }

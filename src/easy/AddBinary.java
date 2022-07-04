@@ -10,33 +10,38 @@ import java.util.Arrays;
  * a and b consist only of '0' or '1' characters.
  * Each string does not contain leading zeros except for the zero itself.
  */
-public class AddBinary
-{
-    public String addBinary(String a, String b)
+public class AddBinary {
+    public String addBinary(String a, String b) {
+        String str = method1(a, b);
+
+
+    }
+
+    private String method1(String a, String b)
     {
         int[] x = new int[a.length()];
         int[] y = new int[b.length()];
         int[] z = new int[a.length() + b.length()];
         String str = "";
         int counter = 0;
-        int sum;
+        int sum = 0;
         boolean isCarry = false;
 
         // convert to integer and store it to int array
-        for (int i = 0; i < a.length(); i++)
+        for (int i = 0; i < a.length() ; i++)
         {
-            x[i] = a.charAt(i) - 48;
+            x[a.length() - i - 1] = a.charAt(i) - 48;
         }
         System.out.println();
-        for (int i = 0; i < b.length(); i++)
+        for (int i = 0; i < b.length() ; i++)
         {
-            y[i] = b.charAt(i) - 48;
+            y[b.length() - i - 1] = b.charAt(i) - 48;
         }
-
 
         for(int i = 0; i < x.length; i++)
         {
             sum = x[counter];
+
             if (isCarry)
             {
                 sum++;
@@ -46,7 +51,6 @@ public class AddBinary
             if (i < y.length)
             {
                 sum += y[counter];
-
             }
 
             switch (sum)
@@ -66,10 +70,12 @@ public class AddBinary
                 case 3:
                     z[counter] = 1;
                     isCarry = true;
+                    break;
                 default:
                     System.out.println("Error1: something wrong.");
                     break;
             }
+
             counter++;
         }
 
@@ -100,8 +106,9 @@ public class AddBinary
                     case 3:
                         z[counter] = 1;
                         isCarry = true;
+                        break;
                     default:
-                        System.out.println("Error1: something wrong.");
+                        System.out.println("Error2: something wrong.");
                         break;
                 }
                 counter++;
@@ -110,14 +117,14 @@ public class AddBinary
 
         if (isCarry)
         {
-            z[counter] = 1;
+            z[counter++] = 1;
         }
 
-        for(int k = counter; k > -1; k--)
+        for(int k = counter - 1; k > -1; k--)
         {
             str += z[k];
         }
-
+        //System.out.println("output = " + str);
         return str;
     }
 }
