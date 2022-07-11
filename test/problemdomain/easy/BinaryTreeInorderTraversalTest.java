@@ -13,14 +13,12 @@ import static org.junit.jupiter.api.Assertions.*;
 class BinaryTreeInorderTraversalTest {
 
     private BinaryTreeInorderTraversal binaryTreeInorderTraversal;
-    private TreeNode root;
     private List<Integer> output;
     private int counter = 0;
 
     @BeforeEach
     void setUp() {
         this.binaryTreeInorderTraversal = new BinaryTreeInorderTraversal();
-        this.root = null;
         this.output = new ArrayList<>();
         counter = 1;
     }
@@ -28,95 +26,48 @@ class BinaryTreeInorderTraversalTest {
     @AfterEach
     void tearDown() {
         this.binaryTreeInorderTraversal = null;
-        this.root = null;
         this.output = null;
         counter = 0;
     }
 
-    private void add(Integer newValue)
-    {
-        if (root == null)
-        {
-            root = new TreeNode(newValue);
-        }
-        else
-        {
-            add(newValue, root);
-        }
-    }
-
-    private void add(Integer newValue, TreeNode current)
-    {
-        if (newValue == null)
-        {
-            newValue = 0;
-        }
-
-        if (current.left == null)
-        {
-            current.left = new TreeNode(newValue);
-        }
-        else if (current.right == null)
-        {
-            current.right = new TreeNode(newValue);
-        }
-        else
-        {
-            if (current.left.val == 0)
-            {
-                add(newValue, current.right);
-            }
-            else if (current.right.val == 0) {
-                add(newValue, current.left);
-            }
-            else
-            {
-                add(newValue, current.left);
-            }
-        }
-    }
-
     @Test
     void testcase1() {
-        add(1);
-        add(null);
-        add(2);
-        add(3);
+        TreeNode n3 = new TreeNode(3, null, null);
+        TreeNode n2 = new TreeNode(2, n3, null);
+        TreeNode nn = new TreeNode(null, null, null);
+        TreeNode n1 = new TreeNode(1, nn, n2);
 
-        this.output.add(0);
         this.output.add(1);
         this.output.add(3);
         this.output.add(2);
 
-        assertEquals(output, this.binaryTreeInorderTraversal.inorderTraversal(root));
+        assertEquals(output, this.binaryTreeInorderTraversal.inorderTraversal(n1));
     }
 
     @Test
     void testcase2() {
-        add(null);
-        output.add(null);
-        assertEquals(output, this.binaryTreeInorderTraversal.inorderTraversal(root));
+        TreeNode nn = new TreeNode(null);
+        assertEquals(output, this.binaryTreeInorderTraversal.inorderTraversal(nn));
     }
 
     @Test
     void testcase3() {
-        add(1);
+        TreeNode n1 = new TreeNode(1);
         this.output.add(1);
-        assertEquals(this.output, this.binaryTreeInorderTraversal.inorderTraversal(root));
+        assertEquals(this.output, this.binaryTreeInorderTraversal.inorderTraversal(n1));
     }
 
     @Test
     void testcase4() {
-        add(1);
-        add(2);
-        add(null);
-        add(3);
+        TreeNode n3 = new TreeNode(3);
+        TreeNode n2 = new TreeNode(2, n3, null);
+        TreeNode nn = new TreeNode(null);
+        TreeNode n1 = new TreeNode(1, n2, nn);
 
         this.output.add(3);
         this.output.add(2);
         this.output.add(1);
-        this.output.add(0);
 
-        assertEquals(output, this.binaryTreeInorderTraversal.inorderTraversal(root));
+        assertEquals(output, this.binaryTreeInorderTraversal.inorderTraversal(n1));
     }
 }
