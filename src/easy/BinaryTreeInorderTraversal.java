@@ -14,19 +14,21 @@ public class BinaryTreeInorderTraversal
     public List<Integer> inorderTraversal(TreeNode root)
     {
         List<Integer> list = new ArrayList<>();
-        createATree(list, root);
+        traverse(list, root);
         return list;
     }
 
-    private void createATree(List<Integer> list, TreeNode root)
+    private void traverse(List<Integer> list, TreeNode root)
     {
         if (root == null)
         {
             return;
         }
 
-        createATree(list, root.left);
-        list.add(root.val);
-        createATree(list, root.right);
+        traverse(list, root.left);
+        if (root.val != null) {
+            list.add(root.val);
+        }
+        traverse(list, root.right);
     }
 }
