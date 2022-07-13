@@ -11,6 +11,26 @@ package easy;
  */
 public class BalancedBinaryTree {
     public boolean isBalanced(TreeNode root) {
+        if (root == null)
+            return true;
         
+        if (getHeight(root) == -1)
+            return false;
+        return true;
+    }
+
+    private int getHeight(TreeNode root) {
+        // Reach the lowest node which is no any child
+        if (root == null)
+            return 0;
+        int left = getHeight(root.left);
+        int right = getHeight(root.right);
+        // the results from abs(left-right) > 1
+        if (left == -1 || right == -1)
+            return -1;
+        if (Math.abs(left - right) > 1)
+            return -1;
+        // The lowest node return 0 + 1
+        return Math.max(left, right) + 1;
     }
 }
