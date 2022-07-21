@@ -59,7 +59,7 @@ class PascalTriangle2Test {
     }
 
     @Test
-    void testcase5() {
+    void testcase4() {
         ArrayList<Integer> expected = new ArrayList<>();
         int[] arr5 = {1, 4, 6, 4, 1};
 
@@ -67,6 +67,6 @@ class PascalTriangle2Test {
         {
             expected.add(arr5[i]);
         }
-        assertEquals(expected, this.pascalTriangle.getRow(5));
+        assertEquals(expected, this.pascalTriangle.getRow(4));
     }
 }
