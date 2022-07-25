@@ -2,17 +2,25 @@ package easy;
 
 import java.util.Arrays;
 
-/**
- * Given two binary strings a and b, return their sum as a binary string
- *
- * Constraints:
- * 1 <= a.length, b.length <= 104
- * a and b consist only of '0' or '1' characters.
- * Each string does not contain leading zeros except for the zero itself.
+/** Given two binary strings a and b, return their sum as a binary string
+ *  Constraints:
+ *      1 <= a.length, b.length <= 104
+ *      a and b consist only of '0' or '1' characters.
+ *      Each string does not contain leading zeros except for the zero itself.
  */
 public class AddBinary {
+    /**
+     * Given two binary strings a and b, return their sum as a binary string.
+     * @param a a binary string
+     * @param b another binary string
+     * @return the sum of two binary numbers (in string format)
+     */
     public String addBinary(String a, String b) {
 
+        /*
+            Convert each bit from right to left.
+            Tried converting string to number and suffered big integer related converting.
+         */
         char[] str = new char[Math.max(a.length(), b.length()) + 1];
         String result = "";
         boolean isCarry = false;
@@ -79,8 +87,7 @@ public class AddBinary {
         return result;
 
 
-        // String str = method1(a, b);
-        // return str;
+        //return method1(a, b);
     }
 
     private String method1(String a, String b)

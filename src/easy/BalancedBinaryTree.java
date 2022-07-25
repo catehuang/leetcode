@@ -10,6 +10,11 @@ package easy;
  *      -104 <= Node.val <= 104
  */
 public class BalancedBinaryTree {
+    /**
+     * Given a binary tree, determine if it is height-balanced.
+     * @param root A given binary tree.
+     * @return is the given binary tree balanced
+     */
     public boolean isBalanced(TreeNode root) {
         if (root == null)
             return true;
@@ -19,6 +24,11 @@ public class BalancedBinaryTree {
         return true;
     }
 
+    /**
+     * Get the height of a given binary tree
+     * @param root a given binary tree
+     * @return the height of the binary tree
+     */
     private int getHeight(TreeNode root) {
         // Reach the lowest node which is no any child
         if (root == null)

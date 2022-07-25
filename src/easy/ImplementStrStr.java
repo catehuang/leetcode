@@ -13,6 +13,13 @@ package easy;
  *      haystack and needle consist of only lowercase English characters.
  */
 public class ImplementStrStr {
+    /**
+     * Given two strings needle and haystack, return the index of the first occurrence of needle in haystack,
+     * or -1 if needle is not part of haystack.
+     * @param haystack a given string
+     * @param needle the substring that you want to find if it exists in the given string
+     * @return whether the substring is in the given string
+     */
     public int strStr(String haystack, String needle) {
         boolean isMatch = false;
         int str_length= 0;

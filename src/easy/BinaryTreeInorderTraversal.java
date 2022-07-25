@@ -11,6 +11,11 @@ import java.util.List;
  */
 public class BinaryTreeInorderTraversal
 {
+    /**
+     * Visit all nodes on a given binary tree by inorder traversal
+     * @param root given the root of a binary tree
+     * @return the list that for in-order traversal of its nodes' values
+     */
     public List<Integer> inorderTraversal(TreeNode root)
     {
         List<Integer> list = new ArrayList<>();

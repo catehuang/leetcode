@@ -8,6 +8,11 @@ package easy;
  *      There will be at least one word in s.
  */
 public class LengthOfTheLastWord {
+    /**
+     * Find the length of the last word from a given string
+     * @param s a given string
+     * @return the length of the last word
+     */
     public int getIndex(String s) {
         boolean isSpace = true;
         int n = 0;

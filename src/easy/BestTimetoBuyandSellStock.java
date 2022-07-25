@@ -9,11 +9,21 @@ package easy;
  *      0 <= prices[i] <= 10^4
  */
 public class BestTimetoBuyandSellStock {
+    /**
+     * Find the maximum profit or 0
+     * @param prices an integer array that provides the stock prices for each day
+     * @return the max profit you can achieve from the given information
+     */
     public int maxProfit(int[] prices) {
         int profit = 0;
         int minIndex = 0;
         int maxIndex = 0;
 
+        /*  To have a profit, the sold price(s) after the first day must be higher than the buy price at first day.
+            As time goes on, if the price higher than the lowest price (first day), the day is the new lowest day, and
+            the highest price is reset. In contrast, if the price is higher than the lowest price, calculate the profit
+            and replace the max profit if the calculated profit is higher than record.
+         */
         for (int i = 1; i < prices.length; i++)
         {
             if (prices[i] < prices[minIndex]) {

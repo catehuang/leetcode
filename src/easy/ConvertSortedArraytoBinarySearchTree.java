@@ -13,6 +13,12 @@ package easy;
 
 
 public class ConvertSortedArraytoBinarySearchTree {
+    /**
+     * Given an integer array nums where the elements are sorted in ascending order,
+     * convert it to a height-balanced binary search tree.
+     * @param nums given an integer array where the elements are sorted in ascending order
+     * @return a height-balanced binary search tree
+     */
     public TreeNode sortedArrayToBST(int[] nums) {
         if (nums == null || nums.length == 0)
             return null;
@@ -20,6 +26,14 @@ public class ConvertSortedArraytoBinarySearchTree {
         return createBST(nums, 0, nums.length - 1);
     }
 
+    /**
+     * create a balanced binary tree from ascending numbers (will be ill-balanced)
+     * always take the middle node to create the parent node
+     * @param nums an integer array where the elements are sorted in ascending order
+     * @param left the leftmost index
+     * @param right the rightmost index
+     * @return a balanced binary tree
+     */
     private TreeNode createBST(int[] nums, int left, int right)
     {
         if (left > right)
