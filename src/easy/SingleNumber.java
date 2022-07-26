@@ -1,6 +1,8 @@
 package easy;
 
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Iterator;
 
 /*
     Given a non-empty array of integers nums, every element appears twice except for one.
@@ -17,6 +19,7 @@ public class SingleNumber {
      * @return the number appears only once
      */
     public int singleNumber(int[] nums) {
+        /* Too slow - found index or save number to a list
         ArrayList list = new ArrayList();
         for (int i = 0; i < nums.length; i++)
         {
@@ -32,5 +35,15 @@ public class SingleNumber {
             }
         }
         return (int)list.get(0);
+        */
+        // A HashSet is a collection of items where every item is unique.
+        HashSet<Integer> set = new HashSet<>();
+        for (int i: nums)
+        {
+            if (!set.add(i))
+                set.remove(i);
+        }
+        Iterator<Integer> it = set.iterator();
+        return it.next();
     }
 }
