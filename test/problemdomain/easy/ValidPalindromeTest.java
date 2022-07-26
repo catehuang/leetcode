@@ -37,4 +37,16 @@ class ValidPalindromeTest {
         String s = " ";
         assertTrue(this.validPalindrome.isPalindrome(s));
     }
+
+    @Test
+    void isPalindromeTestCase4() {
+        String s = "ab_a";
+        assertTrue(this.validPalindrome.isPalindrome(s));
+    }
+
+    @Test
+    void isPalindromeTestCase5() {
+        String s = "0P";
+        assertFalse(this.validPalindrome.isPalindrome(s));
+    }
 }
