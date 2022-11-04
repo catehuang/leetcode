@@ -19,7 +19,7 @@ class _344_ReverseStringTest {
         char[] c = new char[] {'h','e','l','l','o'};
         char[] output = new char[] {'o','l','l','e','h'};
         char[] result = reverseString.reverseString(c);
-        for (int i = 0; i < c.length - 1 ; i++) {
+        for (int i = 0; i < c.length ; i++) {
             assertEquals(output[i], result[i]);
         }
     }
@@ -29,7 +29,7 @@ class _344_ReverseStringTest {
         char[] c = new char[] {'H','a','n','n','a','h'};
         char[] output = new char[] {'h','a','n','n','a','H'};
         char[] result = reverseString.reverseString(c);
-        for (int i = 0; i < c.length - 1 ; i++) {
+        for (int i = 0; i < c.length ; i++) {
             assertEquals(output[i], result[i]);
         }
     }
