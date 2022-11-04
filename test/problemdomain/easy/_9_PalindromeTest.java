@@ -6,13 +6,13 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class PalindromeTest {
+class _9_PalindromeTest {
 
-    private Palindrome palindrome;
+    private _9_Palindrome palindrome;
 
     @BeforeEach
     void setUp() {
-        this.palindrome = new Palindrome();
+        this.palindrome = new _9_Palindrome();
     }
 
     @AfterEach

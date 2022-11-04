@@ -6,9 +6,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class RemoveDuplicatesFromSortedListTest {
+class _83_RemoveDuplicatesFromSortedListTest {
 
-    private RemoveDuplicatesFromSortedList removeDuplicatesFromSortedList;
+    private _83_RemoveDuplicatesFromSortedList removeDuplicatesFromSortedList;
 
     private int[] traverseNode(ListNode listNode) {
     ListNode current = listNode;
@@ -56,7 +56,7 @@ class RemoveDuplicatesFromSortedListTest {
 
     @BeforeEach
     void setUp() {
-        this.removeDuplicatesFromSortedList = new RemoveDuplicatesFromSortedList();
+        this.removeDuplicatesFromSortedList = new _83_RemoveDuplicatesFromSortedList();
     }
 
     @AfterEach

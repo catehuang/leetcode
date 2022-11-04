@@ -6,13 +6,13 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ClimbingStairsTest {
+class _70_ClimbingStairsTest {
 
-    private ClimbingStairs climbingStairs;
+    private _70_ClimbingStairs climbingStairs;
 
     @BeforeEach
     void setUp() {
-        this.climbingStairs = new ClimbingStairs();
+        this.climbingStairs = new _70_ClimbingStairs();
     }
 
     @AfterEach

@@ -6,13 +6,13 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class LinkedListCycleTest {
+class _141_LinkedListCycleTest {
 
-    LinkedListCycle linkedListCycle;
+    _141_LinkedListCycle linkedListCycle;
 
     @BeforeEach
     void setUp() {
-        this.linkedListCycle = new LinkedListCycle();
+        this.linkedListCycle = new _141_LinkedListCycle();
     }
 
     @AfterEach

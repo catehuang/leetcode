@@ -6,13 +6,13 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class BalancedBinaryTreeTest {
+class _110_BalancedBinaryTreeTest {
 
-    BalancedBinaryTree balancedBinaryTree;
+    _110_BalancedBinaryTree balancedBinaryTree;
 
     @BeforeEach
     void setUp() {
-        this.balancedBinaryTree = new BalancedBinaryTree();
+        this.balancedBinaryTree = new _110_BalancedBinaryTree();
     }
 
     @AfterEach

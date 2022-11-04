@@ -6,13 +6,13 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class AddBinaryTest {
+class _67_AddBinaryTest {
 
-    private AddBinary addBinary;
+    private _67_AddBinary addBinary;
 
     @BeforeEach
     void setUp() {
-        this.addBinary = new AddBinary();
+        this.addBinary = new _67_AddBinary();
     }
 
     @AfterEach

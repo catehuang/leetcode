@@ -9,7 +9,7 @@ import java.util.List;
  *      The number of nodes in the tree is in the range [0, 100].
  *      -100 <= Node.val <= 100
  */
-public class BinaryTreeInorderTraversal
+public class _94_BinaryTreeInorderTraversal
 {
     /**
      * Visit all nodes on a given binary tree by inorder traversal

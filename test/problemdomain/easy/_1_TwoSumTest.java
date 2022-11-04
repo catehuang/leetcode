@@ -8,14 +8,14 @@ import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class TwoSumTest
+class _1_TwoSumTest
 {
-    private TwoSum twoSum;
+    private _1_TwoSum twoSum;
 
     @BeforeEach
     void setUp()
     {
-        this.twoSum = new TwoSum();
+        this.twoSum = new _1_TwoSum();
     }
 
     @AfterEach

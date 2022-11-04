@@ -13,7 +13,7 @@ package easy;
  *      0 <= nums[i] <= 50
  *      0 <= val <= 100
  */
-public class RemoveElement
+public class _27_RemoveElement
 {
     public int removeElement(int[] nums, int val)
     {

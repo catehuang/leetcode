@@ -6,13 +6,13 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class SingleNumberTest {
+class _136_SingleNumberTest {
 
-    SingleNumber singleNumber;
+    _136_SingleNumber singleNumber;
 
     @BeforeEach
     void setUp() {
-        this.singleNumber = new SingleNumber();
+        this.singleNumber = new _136_SingleNumber();
     }
 
     @AfterEach

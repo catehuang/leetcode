@@ -7,7 +7,7 @@ import java.util.List;
  *  Constraints:
  *      0 <= rowIndex <= 33
  */
-public class PascalTriangle2 {
+public class _119_PascalTriangle2 {
     public List<Integer> getRow(int rowIndex) {
         List<Integer> list = new ArrayList<>();
 

@@ -7,7 +7,7 @@ package easy;
  *      The number of nodes in the tree is in the range [0, 105].
  *      -1000 <= Node.val <= 1000
  */
-public class MinimumDepthofBinaryTree {
+public class _111_MinimumDepthofBinaryTree {
     public int minDepth(TreeNode root) {
         if (root == null)
             return 0;

@@ -10,7 +10,7 @@ package easy;
  *      0 <= digits[i] <= 9
  *      digits does not contain any leading 0's.
  */
-public class PlusOne
+public class _66_PlusOne
 {
     public int[] plusOne(int[] digits) {
         // It's better convert it to string or you'll need to deal with big integer !!

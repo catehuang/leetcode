@@ -6,13 +6,13 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class BestTimetoBuyandSellStockTest {
+class _121_BestTimetoBuyandSellStockTest {
 
-    BestTimetoBuyandSellStock bestTimetoBuyandSellStock;
+    _121_BestTimetoBuyandSellStock bestTimetoBuyandSellStock;
 
     @BeforeEach
     void setUp() {
-        this.bestTimetoBuyandSellStock = new BestTimetoBuyandSellStock();
+        this.bestTimetoBuyandSellStock = new _121_BestTimetoBuyandSellStock();
     }
 
     @AfterEach

@@ -6,13 +6,13 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class SearchInsertPositionTest {
+class _35_SearchInsertPositionTest {
 
-    private SearchInsertPosition searchInsertPosition;
+    private _35_SearchInsertPosition searchInsertPosition;
 
     @BeforeEach
     void setUp() {
-        this.searchInsertPosition = new SearchInsertPosition();
+        this.searchInsertPosition = new _35_SearchInsertPosition();
     }
 
     @AfterEach

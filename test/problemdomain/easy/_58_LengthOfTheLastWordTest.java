@@ -6,13 +6,13 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class LengthOfTheLastWordTest {
+class _58_LengthOfTheLastWordTest {
 
-    private LengthOfTheLastWord lengthOfTheLastWord;
+    private _58_LengthOfTheLastWord lengthOfTheLastWord;
 
     @BeforeEach
     void setUp() {
-        this.lengthOfTheLastWord = new LengthOfTheLastWord();
+        this.lengthOfTheLastWord = new _58_LengthOfTheLastWord();
     }
 
     @AfterEach

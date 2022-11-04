@@ -6,13 +6,13 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class RemoveElementTest {
+class _27_RemoveElementTest {
 
-    private RemoveElement removeElement;
+    private _27_RemoveElement removeElement;
 
     @BeforeEach
     void setUp() {
-        this.removeElement = new RemoveElement();
+        this.removeElement = new _27_RemoveElement();
     }
 
     @AfterEach

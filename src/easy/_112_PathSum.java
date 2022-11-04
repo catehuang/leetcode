@@ -7,7 +7,7 @@ package easy;
  *      -1000 <= Node.val <= 1000
  *      -1000 <= targetSum <= 1000
  */
-public class PathSum {
+public class _112_PathSum {
     boolean hasSum = false;
     public boolean hasPathSum(TreeNode root, int sum) {
         if (root == null)

@@ -6,13 +6,13 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class MergeSortedArrayTest {
+class _88_MergeSortedArrayTest {
 
-    private MergeSortedArray mergeSortedArray;
+    private _88_MergeSortedArray mergeSortedArray;
 
     @BeforeEach
     void setUp() {
-        this.mergeSortedArray = new MergeSortedArray();
+        this.mergeSortedArray = new _88_MergeSortedArray();
     }
 
     @AfterEach

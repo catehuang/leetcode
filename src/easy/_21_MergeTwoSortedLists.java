@@ -9,7 +9,7 @@ package easy;
  *      -100 <= Node.val <= 100
  *      Both list1 and list2 are sorted in non-decreasing order.
  */
-public class MergeTwoSortedLists
+public class _21_MergeTwoSortedLists
 {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
 

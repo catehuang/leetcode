@@ -8,7 +8,7 @@ package easy;
  *      1 <= prices.length <= 10^5
  *      0 <= prices[i] <= 10^4
  */
-public class BestTimetoBuyandSellStock {
+public class _121_BestTimetoBuyandSellStock {
     /**
      * Find the maximum profit or 0
      * @param prices an integer array that provides the stock prices for each day

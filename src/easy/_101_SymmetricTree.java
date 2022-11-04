@@ -11,7 +11,7 @@ import java.util.Queue;
  *      The number of nodes in the tree is in the range [1, 1000].
  *      -100 <= Node.val <= 100
  */
-public class SymmetricTree {
+public class _101_SymmetricTree {
     public boolean isSymmetric(TreeNode root) {
         if (root == null)
             return true;

@@ -10,7 +10,7 @@ package easy;
  *      -109 <= target <= 109
  *      Only one valid answer exists.
  */
-public class TwoSum {
+public class _1_TwoSum {
     public int[] twoSum(int[] nums, int target)
     {
         for (int i = 0; i < nums.length - 1; i++)

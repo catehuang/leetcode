@@ -6,14 +6,14 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class SameTreeTest {
+class _100_SameTreeTest {
 
-    SameTree sameTree;
+    _100_SameTree sameTree;
     TreeNode treeNode1;
 
     @BeforeEach
     void setUp() {
-        this.sameTree = new SameTree();
+        this.sameTree = new _100_SameTree();
         this.treeNode1 = new TreeNode();
     }
 

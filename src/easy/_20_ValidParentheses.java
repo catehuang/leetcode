@@ -11,7 +11,7 @@ package easy;
  *       1 <= s.length <= 104
  *       s consists of parentheses only '()[]{}'.
  */
-public class ValidParentheses {
+public class _20_ValidParentheses {
     public boolean isValid(String s)
     {
         char[] c = s.toCharArray();

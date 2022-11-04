@@ -8,7 +8,7 @@ package easy;
  *      1 <= s.length <= 2 * 105
  *      s consists only of printable ASCII characters.
  */
-public class Palindrome
+public class _9_Palindrome
 {
     public boolean isPalindrome(int x)
     {

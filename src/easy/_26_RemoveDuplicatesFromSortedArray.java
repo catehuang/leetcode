@@ -14,7 +14,7 @@ package easy;
  *         -100 <= nums[i] <= 100
  *         nums is sorted in non-decreasing order.
  */
-public class RemoveDuplicatesFromSortedArray {
+public class _26_RemoveDuplicatesFromSortedArray {
     public int removeDuplicates(int[] nums)
     {
         int n = 0;

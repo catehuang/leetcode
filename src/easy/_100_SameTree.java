@@ -10,7 +10,7 @@ package easy;
  *      The number of nodes in both trees is in the range [0, 100].
  *      -104 <= Node.val <= 104
  */
-public class SameTree {
+public class _100_SameTree {
     public boolean isSameTree(TreeNode p, TreeNode q) {
         if (p == null && q == null) {
             return true;

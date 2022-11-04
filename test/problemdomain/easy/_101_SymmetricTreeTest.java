@@ -6,13 +6,13 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class SymmetricTreeTest {
+class _101_SymmetricTreeTest {
 
-    SymmetricTree symmetricTree;
+    _101_SymmetricTree symmetricTree;
 
     @BeforeEach
     void setUp() {
-        this.symmetricTree = new SymmetricTree();
+        this.symmetricTree = new _101_SymmetricTree();
     }
 
     @AfterEach

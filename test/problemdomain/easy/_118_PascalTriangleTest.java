@@ -10,7 +10,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class PascalTriangleTest {
+class _118_PascalTriangleTest {
 
     _118_PascalTriangle pascalTriangle;
 

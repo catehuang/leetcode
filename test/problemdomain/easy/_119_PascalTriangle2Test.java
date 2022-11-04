@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class PascalTriangle2Test {
+class _119_PascalTriangle2Test {
 
     _119_PascalTriangle2 pascalTriangle;
 

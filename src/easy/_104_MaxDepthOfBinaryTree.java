@@ -1,7 +1,5 @@
 package easy;
 
-import com.sun.source.tree.Tree;
-
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
@@ -10,7 +8,7 @@ import java.util.Stack;
  * The maximum depth is the number of nodes along the longest path
  * from the root node down to the farthest leaf node.
  */
-public class MaxDepthOfBinaryTree {
+public class _104_MaxDepthOfBinaryTree {
     public int maxDepth(TreeNode root) {
         // recursive
         return recursiveMethod(root);

@@ -6,13 +6,13 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class RomanToIntegerTest {
+class _13_RomanToIntegerTest {
 
-    private RomanToInteger romanToInteger;
+    private _13_RomanToInteger romanToInteger;
 
     @BeforeEach
     void setUp() {
-        this.romanToInteger = new RomanToInteger();
+        this.romanToInteger = new _13_RomanToInteger();
     }
 
     @AfterEach

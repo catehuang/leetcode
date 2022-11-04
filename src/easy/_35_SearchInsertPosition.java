@@ -10,7 +10,7 @@ package easy;
  *      nums contains distinct values sorted in ascending order.
  *      -104 <= target <= 104
  */
-public class SearchInsertPosition {
+public class _35_SearchInsertPosition {
     public int searchInsert(int[] nums, int target)
     {
         for (int i = 0; i < nums.length; i++)

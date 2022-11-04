@@ -6,13 +6,13 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class PathSumTest {
+class _112_PathSumTest {
 
-    PathSum pathSum;
+    _112_PathSum pathSum;
 
     @BeforeEach
     void setUp() {
-        this.pathSum = new PathSum();
+        this.pathSum = new _112_PathSum();
     }
 
     @AfterEach

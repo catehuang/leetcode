@@ -9,7 +9,7 @@ package easy;
  *      The number of nodes in the tree is in the range [0, 5000].
  *      -104 <= Node.val <= 104
  */
-public class BalancedBinaryTree {
+public class _110_BalancedBinaryTree {
     /**
      * Given a binary tree, determine if it is height-balanced.
      * @param root A given binary tree.

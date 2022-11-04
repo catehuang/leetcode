@@ -7,7 +7,7 @@ package easy;
  *      s consists of only English letters and spaces ' '.
  *      There will be at least one word in s.
  */
-public class LengthOfTheLastWord {
+public class _58_LengthOfTheLastWord {
     /**
      * Find the length of the last word from a given string
      * @param s a given string

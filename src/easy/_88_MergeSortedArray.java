@@ -18,7 +18,7 @@ package easy;
  *      1 <= m + n <= 200
  *      -109 <= nums1[i], nums2[j] <= 109
  */
-public class MergeSortedArray {
+public class _88_MergeSortedArray {
     public int[] merge(int[] nums1, int m, int[] nums2, int n) {
         int a = m - 1;
         int b = n - 1;

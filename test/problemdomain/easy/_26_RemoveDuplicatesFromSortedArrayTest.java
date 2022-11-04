@@ -6,13 +6,13 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class RemoveDuplicatesFromSortedArrayTest {
+class _26_RemoveDuplicatesFromSortedArrayTest {
 
-    private RemoveDuplicatesFromSortedArray removeDuplicatesFromSortedArray;
+    private _26_RemoveDuplicatesFromSortedArray removeDuplicatesFromSortedArray;
 
     @BeforeEach
     void setUp() {
-        this.removeDuplicatesFromSortedArray = new RemoveDuplicatesFromSortedArray();
+        this.removeDuplicatesFromSortedArray = new _26_RemoveDuplicatesFromSortedArray();
     }
 
     @AfterEach

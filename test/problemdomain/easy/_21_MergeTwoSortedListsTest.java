@@ -6,9 +6,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class MergeTwoSortedListsTest {
+class _21_MergeTwoSortedListsTest {
 
-    private MergeTwoSortedLists mergeTwoSortedLists;
+    private _21_MergeTwoSortedLists mergeTwoSortedLists;
     private int[] traverseNode(ListNode listNode) {
         ListNode current = listNode;
         int[] results = new int[100];
@@ -55,7 +55,7 @@ class MergeTwoSortedListsTest {
 
     @BeforeEach
     void setUp() {
-        this.mergeTwoSortedLists = new MergeTwoSortedLists();
+        this.mergeTwoSortedLists = new _21_MergeTwoSortedLists();
     }
 
     @AfterEach

@@ -1,6 +1,5 @@
 package easy;
 
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
 
@@ -12,7 +11,7 @@ import java.util.Iterator;
         1 <= nums.length <= 3 * 104
         -3 * 104 <= nums[i] <= 3 * 104
  */
-public class SingleNumber {
+public class _136_SingleNumber {
     /**
      * Find put which number appears only once
      * @param nums a given non-empty array of integers nums

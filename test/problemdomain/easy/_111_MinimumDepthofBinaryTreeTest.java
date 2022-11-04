@@ -1,19 +1,18 @@
 package easy;
 
-import com.sun.source.tree.Tree;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class MinimumDepthofBinaryTreeTest {
+class _111_MinimumDepthofBinaryTreeTest {
 
-    MinimumDepthofBinaryTree minimumDepthofBinaryTree;
+    _111_MinimumDepthofBinaryTree minimumDepthofBinaryTree;
 
     @BeforeEach
     void setUp() {
-        this.minimumDepthofBinaryTree = new MinimumDepthofBinaryTree();
+        this.minimumDepthofBinaryTree = new _111_MinimumDepthofBinaryTree();
     }
 
     @AfterEach

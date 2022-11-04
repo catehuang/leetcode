@@ -6,7 +6,7 @@ import java.util.List;
 /** Given an integer numRows, return the first numRows of Pascal's triangle.
  *
  */
-public class PascalTriangle {
+public class _118_PascalTriangle {
     public List<List<Integer>> generate(int numRows) {
         List<List<Integer>> result = new ArrayList<>();
         List<Integer> list = new ArrayList<>();

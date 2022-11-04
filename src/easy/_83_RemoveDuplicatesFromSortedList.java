@@ -8,7 +8,7 @@ package easy;
  *      -100 <= Node.val <= 100
  *      The list is guaranteed to be sorted in ascending order.
  */
-public class RemoveDuplicatesFromSortedList {
+public class _83_RemoveDuplicatesFromSortedList {
     public ListNode remove(ListNode head) {
         if (head == null)
         {

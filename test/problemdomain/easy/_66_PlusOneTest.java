@@ -8,13 +8,13 @@ import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class PlusOneTest {
+class _66_PlusOneTest {
 
-    private PlusOne plusOne;
+    private _66_PlusOne plusOne;
 
     @BeforeEach
     void setUp() {
-        this.plusOne = new PlusOne();
+        this.plusOne = new _66_PlusOne();
     }
 
     @AfterEach

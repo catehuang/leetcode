@@ -7,7 +7,7 @@ import java.math.BigInteger;
  *  Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
  *  Constrains: 1 <= n <= 45
  */
-public class ClimbingStairs {
+public class _70_ClimbingStairs {
     /**
      * Given a staircase, each time you can either climb 1 or 2 steps. How many ways can you climb to the top
      * @param n the number of steps to reach the top of a staircase

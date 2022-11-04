@@ -6,13 +6,13 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ValidParenthesesTest {
+class _20_ValidParenthesesTest {
 
-    private ValidParentheses validParentheses;
+    private _20_ValidParentheses validParentheses;
 
     @BeforeEach
     void setUp() {
-        this.validParentheses = new ValidParentheses();
+        this.validParentheses = new _20_ValidParentheses();
     }
 
     @AfterEach

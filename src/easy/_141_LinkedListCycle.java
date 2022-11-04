@@ -1,8 +1,5 @@
 package easy;
 
-import java.util.HashSet;
-import java.util.Set;
-
 /**
  * There is a cycle in a linked list if there is some node in the list that can be reached again
  * by continuously following the next pointer. Internally, pos is used to denote the index of the node
@@ -14,7 +11,7 @@ import java.util.Set;
  *      pos is -1 or a valid index in the linked-list.
  */
 
-public class LinkedListCycle {
+public class _141_LinkedListCycle {
     /**
      * Given head, the head of a linked list, determine if the linked list has a cycle in it.
      * @param head the head of a linked list
