@@ -1,6 +1,8 @@
 package easy;
 
 
+import common.TreeNode;
+
 /**
  * Compares two trees
  * Return true if two trees are the same
@@ -12,6 +14,7 @@ package easy;
  */
 public class _100_SameTree {
     public boolean isSameTree(TreeNode p, TreeNode q) {
+
         if (p == null && q == null) {
             return true;
         }

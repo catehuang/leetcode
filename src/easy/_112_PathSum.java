@@ -1,5 +1,7 @@
 package easy;
 
+import common.TreeNode;
+
 /** Given the root of a binary tree and an integer targetSum, return true if the tree has
  *  a root-to-leaf path such that adding up all the values along the path equals targetSum.
  *  Constraints:
@@ -10,7 +12,7 @@ package easy;
 public class _112_PathSum {
     boolean hasSum = false;
     public boolean hasPathSum(TreeNode root, int sum) {
-        if (root == null)
+        if (root == null || root.val == null)
             return false;
 
         pathSum(root, sum);
