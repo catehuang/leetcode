@@ -1,5 +1,6 @@
 package easy;
 
+import medium.easy._26_RemoveDuplicatesFromSortedArray;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

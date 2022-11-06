@@ -1,5 +1,6 @@
 package easy;
 
+import medium.easy._344_ReverseString;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
