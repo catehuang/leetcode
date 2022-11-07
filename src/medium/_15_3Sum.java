@@ -12,8 +12,8 @@ public class _15_3Sum {
         List<Integer> list;
         int sum = 0, twoSum = 0;
         List<Integer> numList = new ArrayList<>();
-        for (int i = 0; i < nums.length; i++) {
-            numList.add(nums[i]);
+        for (int num : nums) {
+            numList.add(num);
         }
         Collections.sort(numList);
 
@@ -32,7 +32,39 @@ public class _15_3Sum {
                 return new ArrayList<>();
             }
         }
-
+        for (int i = 0; i < numList.size() - 1; i++) {
+            int start = i + 1;
+            int end = numList.size() - 1;
+            while (start < end) {
+                sum = numList.get(i) + numList.get(start) + numList.get(end);
+                if (sum == 0) {
+                    list = new ArrayList<>();
+                    list.add(numList.get(i));
+                    list.add(numList.get(start));
+                    list.add(numList.get(end));
+                    Collections.sort(list);
+                    if (!output.contains(list)){
+                        output.add(list);
+                    }
+                    while (start < end && Objects.equals(numList.get(start), numList.get(start + 1))) {
+                        start++;
+                    }
+                    if (start < end) {
+                        start++;
+                    }
+                    if (start > end) {
+                        end--;
+                    }
+                } else {
+                    if (sum > 0) {
+                        end--;
+                    } else {
+                        start++;
+                    }
+                }
+            }
+        }
+/*
         for (int i = 0; i < numList.size() - 2; i++) {
             sum = numList.get(i);
             for (int j = i + 1; j < numList.size() - 1; j++) {
@@ -50,6 +82,7 @@ public class _15_3Sum {
                 }
             }
         }
+ */
         return output;
     }
 }

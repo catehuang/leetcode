@@ -90,4 +90,25 @@ class _15_3SumTest {
         }
         assertEquals(expected.size(), correct);
     }
+
+    @Test
+    public void threeSum_case_5() throws Exception {
+        int[] input = new int[] {0, 0, 0, 0};
+        List<List<Integer>> expected = new ArrayList<>();
+        List<List<Integer>> output = threeSum.threeSum(input);
+        List<Integer> list1 = new ArrayList<>();
+        list1.add(0);
+        list1.add(0);
+        list1.add(0);
+        expected.add(list1);
+        Collections.sort(list1);
+        assertEquals(expected.size(), output.size());
+        int correct = 0;
+        for (List<Integer> l: expected) {
+            if (output.contains(l)) {
+                correct++;
+            }
+        }
+        assertEquals(expected.size(), correct);
+    }
 }
