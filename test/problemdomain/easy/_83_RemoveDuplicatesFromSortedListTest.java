@@ -1,7 +1,6 @@
 package easy;
 
 import common.ListNode;
-import medium.easy._83_RemoveDuplicatesFromSortedList;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

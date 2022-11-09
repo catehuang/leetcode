@@ -1,6 +1,5 @@
 package easy;
 
-import medium.easy._520_DetectCapital;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

@@ -1,6 +1,5 @@
 package easy;
 
-import medium.easy._27_RemoveElement;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
