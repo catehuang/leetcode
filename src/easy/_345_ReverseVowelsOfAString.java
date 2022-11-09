@@ -62,4 +62,3 @@ public class _345_ReverseVowelsOfAString {
         return result;
         */
 }
-}
