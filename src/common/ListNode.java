@@ -17,4 +17,24 @@ public class ListNode {
     {
         this.val = val; this.next = next;
     }
+
+    public ListNode createLinkedList(int[] nodes) {
+        ListNode dummy = new ListNode(0);
+        ListNode current = dummy;
+
+        for (int i : nodes) {
+            current.next = new ListNode(i);
+            current = current.next;
+        }
+
+        //checkListNode(dummy.next);
+        return dummy.next;
+    }
+
+    public void checkListNode(ListNode head) {
+        while (head != null) {
+            System.out.println(head.val);
+            head = head.next;
+        }
+    }
 }
