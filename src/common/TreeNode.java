@@ -22,7 +22,7 @@ public class TreeNode {
         this.right = right;
     }
 
-    public TreeNode addNode (TreeNode root, int value) {
+    public TreeNode addNode (TreeNode root, Integer value) {
         //is the root exists?
         if (root == null) {
             // create a new node

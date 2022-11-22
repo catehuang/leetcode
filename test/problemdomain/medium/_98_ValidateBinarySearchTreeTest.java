@@ -17,10 +17,10 @@ class _98_ValidateBinarySearchTreeTest {
 
     @Test
     public void isValidBST_case_1() throws Exception {
-        int[] nodes = new int[] {2, 1, 3};
+        Integer[] nodes = new Integer[] {2, 1, 3};
         TreeNode root = null;
 
-        for (int node : nodes) {
+        for (Integer node : nodes) {
             root = addNode(root, node);
         }
 
@@ -30,10 +30,10 @@ class _98_ValidateBinarySearchTreeTest {
 
     @Test
     public void isValidBST_case_2() throws Exception {
-        int[] nodes = new int[]{5, 1, 4, 0, 0, 3, 6};
+        Integer[] nodes = new Integer[]{5, 1, 4, null, null, 3, 6};
         TreeNode root = null;
 
-        for (int node : nodes) {
+        for (Integer node : nodes) {
             root = addNode(root, node);
         }
 
@@ -42,10 +42,10 @@ class _98_ValidateBinarySearchTreeTest {
 
     @Test
     public void isValidBST_case_3() throws Exception {
-        int[] nodes = new int[]{3, 1, 5, 0, 0, 3, 1};
+        Integer[] nodes = new Integer[]{3, 1, 5, null, null, 3, 1};
         TreeNode root = null;
 
-        for (int node : nodes) {
+        for (Integer node : nodes) {
             root = addNode(root, node);
         }
 
@@ -54,22 +54,22 @@ class _98_ValidateBinarySearchTreeTest {
 
     @Test
     public void isValidBST_case_4() throws Exception {
-        int[] nodes = new int[]{5, 1, 6, 0, 0, 3, 7};
+        Integer[] nodes = new Integer[]{5, 1, 6, null, null, 3, 7};
         TreeNode root = null;
 
-        for (int node : nodes) {
+        for (Integer node : nodes) {
             root = addNode(root, node);
         }
 
-        assertTrue(validateBinarySearchTree.isValidBST(root));
+        assertFalse(validateBinarySearchTree.isValidBST(root));
     }
 
     @Test
     public void isValidBST_case_5() throws Exception {
-        int[] nodes = new int[]{2, 1, 3, 4, 2, 1, 4};
+        Integer[] nodes = new Integer[]{2, 1, 3, 4, 2, 1, 4};
         TreeNode root = null;
 
-        for (int node : nodes) {
+        for (Integer node : nodes) {
             root = addNode(root, node);
         }
 
@@ -78,10 +78,10 @@ class _98_ValidateBinarySearchTreeTest {
 
     @Test
     public void isValidBST_case_6() throws Exception {
-        int[] nodes = new int[]{2, 2, 2};
+        Integer[] nodes = new Integer[]{2, 2, 2};
         TreeNode root = null;
 
-        for (int node : nodes) {
+        for (Integer node : nodes) {
             root = addNode(root, node);
         }
 
@@ -91,17 +91,41 @@ class _98_ValidateBinarySearchTreeTest {
     @Test
     public void isValidBST_case_7() throws Exception {
         // you can't find 3!!
-        int[] nodes = new int[]{5, 4, 6, 0, 0, 3, 7};
+        Integer[] nodes = new Integer[]{5, 4, 6, null, null, 3, 7};
         TreeNode root = null;
 
-        for (int node : nodes) {
+        for (Integer node : nodes) {
             root = addNode(root, node);
         }
 
         assertFalse(validateBinarySearchTree.isValidBST(root));
     }
 
-    public TreeNode addNode (TreeNode root, int value) {
+    @Test
+    public void isValidBST_case_8() throws Exception {
+        Integer[] nodes = new Integer[]{3, 1, 5, 0, 2, 4, 6, null, null, null, 3};
+        TreeNode root = null;
+
+        for (Integer node : nodes) {
+            root = addNode(root, node);
+        }
+
+        assertFalse(validateBinarySearchTree.isValidBST(root));
+    }
+
+    @Test
+    public void isValidBST_case_9() throws Exception {
+        Integer[] nodes = new Integer[]{null};
+        TreeNode root = null;
+
+        for (Integer node : nodes) {
+            root = addNode(root, node);
+        }
+
+        assertTrue(validateBinarySearchTree.isValidBST(root));
+    }
+
+    public TreeNode addNode (TreeNode root, Integer value) {
         //is the root exists?
         if (root == null) {
             // create a new node

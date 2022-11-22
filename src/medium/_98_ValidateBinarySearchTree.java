@@ -11,32 +11,20 @@ import common.TreeNode;
  */
 public class _98_ValidateBinarySearchTree {
     public boolean isValidBST(TreeNode root) {
-        // inorder traverse
-        return inOrderTraverse(root);
+        return inOrderTraverse(root, null, null);
     }
 
-    private boolean inOrderTraverse(TreeNode root) {
-        boolean isDone = false;
-        boolean result;
-
-        if (root == null) {
+    private boolean inOrderTraverse(TreeNode root, Integer min, Integer max) {
+        // root is null, but intelliJ doesn't think it's a null
+        // I have to check the value to make it work
+        if (root == null || root.val == null) {
             return true;
         }
-        if (root.left != null && root.left.val != 0 && root.left.val >= root.val) {
-            return false;
-        }
-        if (root.right != null && root.right.val != 0 && root.right.val <= root.val) {
+
+        if ((max != null && root.val >= max) || (min != null && root.val <= min)) {
             return false;
         }
 
-        result = inOrderTraverse(root.left);
-        if (!result) {
-            return false;
-        }
-        result = inOrderTraverse(root.right);
-        if (!result) {
-            return false;
-        }
-        return true;
+        return inOrderTraverse(root.left, min, root.val) && inOrderTraverse(root.right, root.val, max);
     }
 }
