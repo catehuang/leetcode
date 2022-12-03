@@ -21,111 +21,57 @@ public class _804_UniqueMorseCodeWords {
         HashSet<String> hashSet = new HashSet<>();
         for (String str: words) {
             String word = getMorseCode_2(str);
-            if (!hashSet.contains(word)) {
-                hashSet.add(word);
-            }
+            hashSet.add(word);
         }
         return hashSet.size();
     }
 
     private String getMorseCode_2(String str) {
-        String result = "";
+        StringBuilder result = new StringBuilder();
         String[] morseCode = {".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.",
                 "---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."};
 
         for (Character c : str.toCharArray()) {
-            result += morseCode[c-97];
+            result.append(morseCode[c - 97]);
         }
-        return result;
+        return result.toString();
     }
 
     private String getMorseCode_1(String str) {
         String[] s = str.split("");
-        String morseCode = "";
+        StringBuilder morseCode = new StringBuilder();
         for (String c : s) {
             switch (c) {
-                case "a":
-                    morseCode += "._";
-                    break;
-                case "b":
-                    morseCode += "_...";
-                    break;
-                case "c":
-                    morseCode += "_._.";
-                    break;
-                case "d":
-                    morseCode += "_..";
-                    break;
-                case "e":
-                    morseCode += ".";
-                    break;
-                case "f":
-                    morseCode += ".._.";
-                    break;
-                case "g":
-                    morseCode += "__.";
-                    break;
-                case "h":
-                    morseCode += "....";
-                    break;
-                case "i":
-                    morseCode += "..";
-                    break;
-                case "j":
-                    morseCode += ".___";
-                    break;
-                case "k":
-                    morseCode += "_._";
-                    break;
-                case "l":
-                    morseCode += "._..";
-                    break;
-                case "m":
-                    morseCode += "__";
-                    break;
-                case "n":
-                    morseCode += "_.";
-                    break;
-                case "o":
-                    morseCode += "___";
-                    break;
-                case "p":
-                    morseCode += ".__.";
-                    break;
-                case "q":
-                    morseCode += "__._";
-                    break;
-                case "r":
-                    morseCode += "._.";
-                    break;
-                case "s":
-                    morseCode += "...";
-                    break;
-                case "t":
-                    morseCode += "_";
-                    break;
-                case "u":
-                    morseCode += ".._";
-                    break;
-                case "v":
-                    morseCode += "..._";
-                    break;
-                case "w":
-                    morseCode += ".__";
-                    break;
-                case "x":
-                    morseCode += "_.._";
-                    break;
-                case "y":
-                    morseCode += "_.__";
-                    break;
-                case "z":
-                    morseCode += "__..";
-                    break;
-                default:
-                    break;
+                case "a" -> morseCode.append("._");
+                case "b" -> morseCode.append("_...");
+                case "c" -> morseCode.append("_._.");
+                case "d" -> morseCode.append("_..");
+                case "e" -> morseCode.append(".");
+                case "f" -> morseCode.append(".._.");
+                case "g" -> morseCode.append("__.");
+                case "h" -> morseCode.append("....");
+                case "i" -> morseCode.append("..");
+                case "j" -> morseCode.append(".___");
+                case "k" -> morseCode.append("_._");
+                case "l" -> morseCode.append("._..");
+                case "m" -> morseCode.append("__");
+                case "n" -> morseCode.append("_.");
+                case "o" -> morseCode.append("___");
+                case "p" -> morseCode.append(".__.");
+                case "q" -> morseCode.append("__._");
+                case "r" -> morseCode.append("._.");
+                case "s" -> morseCode.append("...");
+                case "t" -> morseCode.append("_");
+                case "u" -> morseCode.append(".._");
+                case "v" -> morseCode.append("..._");
+                case "w" -> morseCode.append(".__");
+                case "x" -> morseCode.append("_.._");
+                case "y" -> morseCode.append("_.__");
+                case "z" -> morseCode.append("__..");
+                default -> {
+                }
             }
         }
-        return morseCode;
+        return morseCode.toString();
     }
 }
