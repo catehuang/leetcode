@@ -1,8 +1,6 @@
 package medium;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 /**
  * You are given an array of strings of the same length words.
@@ -24,8 +22,8 @@ import java.util.Map;
  */
 public class _893_GroupsOfSpecialEquivalentStrings {
     public int numSpecialEquivGroups(String[] words) {
-        // read words and put sorted odd and even characters into map
-        HashMap<String, Integer> hashMap = new HashMap<>();
+        // read words and put sorted odd and even characters into map/set
+        Set<String> set = new HashSet<>();
         // length of word is even: number of odd == number of even
         // length of word is odd: number of even = number of odd + 1
         int evenItems;
@@ -50,12 +48,9 @@ public class _893_GroupsOfSpecialEquivalentStrings {
             Arrays.sort(even);
             Arrays.sort(odd);
             String key = Arrays.toString(even).toString() + Arrays.toString(odd).toString();
-            if (!hashMap.containsKey(key)){
-                hashMap.put(key, 1);
-            } else {
-                hashMap.put(key, hashMap.get(key) + 1);
-            }
+
+            set.add(key);
         }
-        return hashMap.size();
+        return set.size();
     }
 }
