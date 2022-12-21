@@ -12,7 +12,6 @@ import java.util.Set;
  */
 public class _409_longestPalindrome {
     public int longestPalindrome(String s) {
-        // to build a palindrome, there must have duplicate characters
         Set<Character> set = new HashSet<>();
         int counter = 0;
         for (int i = 0; i < s.length(); i++)
@@ -21,15 +20,11 @@ public class _409_longestPalindrome {
             // the character is in the set
             // move out the character from set and add 2
             // because I only want to have duplicated characters
-            if (set.contains(key))
+            boolean added = set.add(key);
+            if (!added)
             {
                 counter += 2;
                 set.remove(key);
-            }
-            // the character is not in the set
-            else
-            {
-                set.add(key);
             }
         }
         // can have an extra character to make a palindrome
